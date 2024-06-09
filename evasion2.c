@@ -12,9 +12,9 @@ int main(int argc,char* argv[]){
 
     int connection;
     struct sockaddr_in client_addr;
-    char ip_addr[] = "192.168.1.103";
-    char data[4096];
-    int port = 1337;
+    char ip_addr[] = "192.168.1.1"; //Add your server ip
+    char data[4096]; 
+    int port = 1337; // Add tour server port
 
     WSADATA wsadata;
     WSAStartup(MAKEWORD(2,2),&wsadata); //Initialize WinSock
